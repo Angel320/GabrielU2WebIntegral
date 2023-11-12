@@ -90,13 +90,11 @@
  
  <body>
   <?php
-# ob_start();
-  // traemos el nav de la master_page
- # require_once 'master_page.php';
-  // validamos si es admin si no lo sacamos por rata
-#  if (isset($_SESSION['rol']) != "administrador") {
- #   header("Location:login.html");
- # }
+ob_start();
+  // validamos si es admin
+ if (isset($_SESSION['rol']) != "administrador") {
+    header("Location:login.php");
+  }
   ?>
   <div class="container">
     <div class="add-product-container">
