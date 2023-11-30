@@ -1,9 +1,9 @@
 <?php
 	/* Definir las variables para la conexion al PDO */
-	define('DB_HOST', 'localhost');
-	define('DB_NAME', 'ecomerce');
+	define('DB_HOST', 'db');
+	define('DB_NAME', 'web_services');
 	define('DB_USER', 'root');
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', 'test');
 
 	try {
 		/* Conectar a una base de datos de MySQL Local */
